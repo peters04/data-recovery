@@ -1,0 +1,45 @@
+// settings
+@import 'settings/reset';
+@import 'settings/font';
+@import 'settings/color';
+$margin: 1.6em;
+
+@import 'layout';
+
+// components
+// l-header
+@import 'components/Nav';
+@import 'components/HeroImage';
+@import 'components/Claim';
+// l-main
+@import 'components/About';
+@import 'components/Button';
+@import 'components/Card';
+@import 'components/Title';
+@import 'components/Map';
+@import 'components/Footer';
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: $font-default;
+  color: $dark;
+
+  @media (max-width: 786px) {
+    font-size: 14px;
+  }
+}
+
+a {
+	text-decoration: none;
+  color: $white;
+  font-weight: $font-bold;
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: $accent;
+  }
+}
